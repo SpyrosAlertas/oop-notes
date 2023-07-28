@@ -1,0 +1,25 @@
+
+\usepackage[]{geometry}
+
+\usepackage{titling} % center cover page
+\renewcommand\maketitlehooka{\null\vfill} % center cover page
+\renewcommand\maketitlehookd{\vfill\null} % center cover page
+
+\usepackage{tocloft} % add dots for sections in table of contents
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % add dots for sections in table of contents
+
+\usepackage{hyperref} % make table of contents clickable
+\hypersetup{ % remove default ugly look of links
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+%\AddToHook{cmd/section/before}{\clearpage} % each section starts on new page
+
+\usepackage{acronym} % acronyms
+
+
+

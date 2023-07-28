@@ -1,0 +1,156 @@
+\documentclass{article}
+
+\include{structure.tex}
+
+\hypersetup{pdftitle={OOP Concepts - English}}
+\hypersetup{pdfauthor={Spyros Alertas}}
+\hypersetup{pdfsubject={OOP Concepts - Notes}}
+\hypersetup{pdfkeywords={Object Oriented Programming, OOP, Class, Object, Inheritance, Encapsulation, Abstraction, Polymorphism, Abstract Class, Interface, Method Overloading, Method Overriding}}
+
+\title{\bfseries{\ac{OOP} Concepts}}
+
+\author{Spyros Alertas}
+
+\date{Created On: July 22, 2023\\Last Edit: \today}
+
+% Hint: \title{whatever}, \author{who cares} and \date{whenever} could stand before or after the \begin{document} command BUT the \maketitle command MUST come AFTER the \begin{document} command!
+
+\begin{document}
+
+
+% cover page
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+
+% table of contents
+\tableofcontents
+
+
+% all sections - main document content
+\newpage
+\section{Introduction}
+\paragraph{} This document is a brief introduction to the basic concepts/principles of \acf{OOP}.\\
+\paragraph{} The most important \acs{OOP} concepts are
+\begin{itemize}
+	\item \hyperref[sec:class]{Class}
+	\item \hyperref[sec:object]{Object}
+	\item \hyperref[sec:inheritance]{Inheritance}
+	\item \hyperref[sec:encapsulation]{Encapsulation}
+	\item \hyperref[sec:abstraction]{Abstraction}
+	\item \hyperref[sec:polymorphism]{Polymorphism}
+\end{itemize}
+
+
+\section{Procedural vs \acl{OOP}}
+\paragraph{} In \textbf{Procedural Programming} the program is divided into procedures. Each procedure contains all the logical steps required to solve a specific problem/task.
+\paragraph{} In \textbf{\acl{OOP}} the program is designed around Objects. Objects contain data and methods (procedures) that act on these data.
+
+
+\section{Why \acl{OOP}?}
+\paragraph{} \textbf{\acf{OOP}} is very useful to create large and complex applications.
+\paragraph{Advantages of \acs{OOP}:}
+\begin{itemize}
+	\item Modularity
+	\item Re-usability
+	\item Readability
+	\item Security
+\end{itemize}
+\paragraph{Disadvantages of \acs{OOP}:}
+\begin{itemize}
+	\item Performance Cost
+	\item Memory Cost
+	\item Steeper Learning Curve
+	\item Design Complexity
+\end{itemize}
+
+
+\section{Class \& Object}
+\label{sec:class}
+\label{sec:object}
+\paragraph{} A \textbf{Class} is a user defined data type that acts as blueprint and is used to create \textbf{Objects}. A class defines the data and the operations that are allowed on these data.
+\paragraph{} \textbf{Objects} are instances of classes. Each time an instance of a class is created, all class fields are initialized and separate memory space is allocated for each instance.
+
+
+\section{Inheritance}
+\label{sec:inheritance}
+\paragraph{} \textbf{Inheritance} is a mechanism in which one class (called \textbf{Child Class} or \textbf{Subclass}) acquires all the properties and behaviors of another class (called \textbf{Parent}, \textbf{Super} or \textbf{Base Class}).
+
+
+\section{Encapsulation}
+\label{sec:encapsulation}
+\paragraph{} \textbf{Encapsulation} is the process of integrating the data and the code (methods) into a single unit (class). The data are hidden from other classes and can be directly accessed only by methods from the same class they are found.
+\paragraph{} \textbf{Encapsulation} can be achieved by using access modifiers (\acs{e.g.}: private, public, etc).
+
+
+\section{Abstraction}
+\label{sec:abstraction}
+\paragraph{} \textbf{Abstraction} is the process of hiding implementation details in order to reduce complexity and improve efficiency.
+\paragraph{} \textbf{Abstraction} can be achieved through interfaces and abstract classes.
+
+
+\section{Polymorphism (Compile-Time \& Runtime)}
+\label{sec:polymorphism}
+\paragraph{} \textbf{Polymorphism} is the provision of a single interface to entities of different types. The program has the ability to identify the correct type at each moment.
+\paragraph{} \textbf{Compile-Time} or \textbf{Static} or \textbf{Early Binding Polymorphism} can be achieved through \hyperref[sec:method-overloading]{method overloading}.
+\paragraph{} \textbf{Runtime} or \textbf{Dynamic} or \textbf{Late Binding Polymorphism} can be achieved through \hyperref[sec:method-overriding]{method overriding}.
+
+
+\newpage
+\section{Abstract Class \& Abstract Method}
+\label{sec:abstract-class}
+\label{sec:abstract-method}
+\paragraph{} An \textbf{Abstract Class} is a type of class that has at least one abstract method.
+\paragraph{} An \textbf{Abstract Class}:
+\begin{itemize}
+	\item cannot be instantiated (cannot be used to create objects)
+	\item can have variables
+	\item can have non-abstract (implemented) methods
+	\item must have at least one abstract method
+\end{itemize}
+\paragraph{} An \textbf{Abstract Method} can exist only in an abstract class and contains only the definition/signature (return type, parameters and exception) of the method without the body/implementation.
+
+
+\section{Interface}
+\label{sec:interface}
+\paragraph{} An \textbf{Interface} is used as a common protocol for all the classes that implement it, as these classes will have to implement all the methods that are defined in the interface.
+\paragraph{} An \textbf{Interface}:
+\begin{itemize}
+	\item cannot be instantiated (cannot be used to create objects)
+	\item can have only static final variables
+	\item cannot have implemented methods
+\end{itemize}
+
+
+\section{Method Overloading \& Method Overriding}
+\label{sec:method-overloading}
+\label{sec:method-overriding}
+\paragraph{} \textbf{Method Overloading} is when two or more methods share the same name but have different signature (number and/or type of parameters).
+\paragraph{} \textbf{Method Overriding} happens between child and parent class or classes that child class implicitly inherits from when methods have the same signature (name and parameters)
+
+
+\section{Instance \& Class Variables}
+\paragraph{} \textbf{Instance Variables} are unique for each instance of the class. Instance variables can be accessed using the object reference, not the class name.
+\paragraph{} \textbf{Class Variables} are common to all instances of the class. Class variables have the keyword static and can be accessed using the class name.
+
+
+\newpage % useful external resources
+\section{External Resources}
+\begin{itemize}
+\item\href{https://en.wikipedia.org/wiki/Procedural_programming}{Procedural Programming - Wikipedia}
+\item\href{https://en.wikipedia.org/wiki/Object-oriented_programming}{\acl{OOP} - Wikipedia}
+\item\href{https://en.wikipedia.org/wiki/Programming_paradigm}{Programming Paradigms - Wikipedia}
+\end{itemize}
+
+
+% last section of the document - contains the list of used acronyms
+%\newpage % acronyms should be on a new page
+\section{Acronyms}
+\begin{acronym}
+	\acro{OOP}{Object Oriented Programming}
+	\acro{e.g.}{latin: exempli gratia - english: for example}
+\end{acronym}
+
+
+\end{document}
